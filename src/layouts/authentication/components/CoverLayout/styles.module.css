@@ -1,0 +1,22 @@
+.heading{
+    background: linear-gradient(to right, rgb(255, 95, 83) 30%,  rgb(255, 118, 53) 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block; 
+}
+.gradientButton {
+    background: linear-gradient(to right, rgb(255, 95, 83) 30%, rgb(255, 118, 53) 70%);
+    height: 40px; /* Specify height with units */
+    width: 100%; /* Specify width as needed */
+    border: none; /* Remove default border */
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color: white; /* Text color */
+    text-align: center; /* Center the text */
+    font-size: 12px; /* Adjust font size */
+    cursor: pointer; /* Change cursor on hover */
+/* Optional: rounded corners */
+}
