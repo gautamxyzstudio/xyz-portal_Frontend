@@ -15,7 +15,7 @@ Coded by www.creative-tim.com
 
 // prop-types is a library for typechecking of props
 import PropTypes from "prop-types";
-
+import styles  from  './styles.module.css';
 // @mui material components
 import Grid from "@mui/material/Grid";
 
@@ -26,38 +26,31 @@ import SoftTypography from "components/SoftTypography";
 // Soft UI Dashboard React examples
 import DefaultNavbar from "examples/Navbars/DefaultNavbar";
 import PageLayout from "examples/LayoutContainers/PageLayout";
-
+import XYZ_LOGO from 'assets/images/xyzlogonew.png';
 // Authentication layout components
 import Footer from "layouts/authentication/components/Footer";
 
 function CoverLayout({ color, header, title, description, image, top, children }) {
   return (
     <PageLayout background="white">
-      <DefaultNavbar
-        action={{
-          type: "external",
-          route: "https://creative-tim.com/product/soft-ui-dashboard-react",
-          label: "free download",
-          color: "dark",
-        }}
-      />
       <Grid
         container
         justifyContent="center"
         sx={{
           minHeight: "75vh",
-          margin: 0,
+          margin: 0, 
         }}
       >
         <Grid item xs={11} sm={8} md={5} xl={3}>
           <SoftBox mt={top}>
-            <SoftBox pt={3} px={3}>
+            <SoftBox px={3}>
               {!header ? (
                 <>
-                  <SoftBox mb={1}>
-                    <SoftTypography variant="h3" fontWeight="bold" color={color} textGradient>
+                  <SoftBox>
+                  <SoftBox mb={2} component="img" src={XYZ_LOGO} alt={title} width="50%" borderRadius='sm' />
+                    <h1 className={styles.heading}>
                       {title}
-                    </SoftTypography>
+                    </h1>
                   </SoftBox>
                   <SoftTypography variant="body2" fontWeight="regular" color="text">
                     {description}

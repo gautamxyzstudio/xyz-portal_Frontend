@@ -45,7 +45,7 @@ const colors = {
   },
 
   primary: {
-    main: "#cb0c9f",
+    main: "#cb0c9f", 
     focus: "#ad0a87",
   },
 
@@ -55,8 +55,8 @@ const colors = {
   },
 
   info: {
-    main: "#17c1e8",
-    focus: "#3acaeb",
+    main: "rgb(255, 95, 83)",
+    focus: "rgb(255, 118, 53)",
   },
 
   success: {
@@ -108,8 +108,8 @@ const colors = {
     },
 
     info: {
-      main: "#2152ff",
-      state: "#21d4fd",
+      main: "rgb(255, 95, 83)",
+      focus: "rgb(255, 118, 53)",
     },
 
     success: {
